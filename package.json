@@ -1,11 +1,11 @@
 {
-  "name": "css_tricks",
+  "name": "js_tricks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "npx vuepress build docs",
     "deploy": "gh-pages -d dist",
     "deploy:build": "npm run docs:build && gh-pages -d dist"
   },

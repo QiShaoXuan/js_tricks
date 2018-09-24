@@ -1,6 +1,7 @@
 # 浏览器对象 BOM
 
-## 判断当前位置是否为页面底部，返回值为true/false
+## 判断当前位置是否为页面底部
+- 返回值为true/false
 ```javascript
   function bottomVisible() {
     return document.documentElement.clientHeight + window.scrollY >= (document.documentElement.scrollHeight || document.documentElement.clientHeight);
