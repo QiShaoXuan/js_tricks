@@ -14,7 +14,7 @@ module.exports = {
       '/bom/',
       '/array/',
       '/date/',
-
+      '/number/',
     ]
   }
 }
