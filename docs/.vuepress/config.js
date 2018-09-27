@@ -9,7 +9,7 @@ module.exports = {
       { text: 'GitHub', link: 'https://github.com/QiShaoXuan/js_tricks' },
     ],
     sidebar: [
-      '/methods/',
+      '/youNeedToKnow/',
       '/dom/',
       '/bom/',
       '/array/',
