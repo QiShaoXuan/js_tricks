@@ -19,7 +19,7 @@ element.insertAdjacentHTML(position, text)
 - 'afterend'
     元素自身的后面。
 
----
+
 
 ## document.implementation
 
@@ -27,14 +27,14 @@ implementation 属性可返回处理该文档的 DOMImplementation 对象。
 
 ```javascript
 function parseHTML(str) {
-  var tmp = document.implementation.createHTMLDocument()
+  let tmp = document.implementation.createHTMLDocument()
   tmp.body.innerHTML = str
   return tmp.body.children
 }
 
 parseHTML(htmlString)
 ```
----
+
 
 ## 函数节流 throttle
 
@@ -48,7 +48,7 @@ function throttle (method,wait=1000,context){
     },wait)
 }
 ```
----
+
 
 ##  函数防抖 debounce
 
@@ -56,12 +56,12 @@ function throttle (method,wait=1000,context){
 
 ```javascript
 function debounce(fn,delay,mustRunDelay){
-    var timer = null
-    var t_start
+    let timer = null
+    let t_start
     return function(){
-        var context = this
-        var args = arguments
-        var t_curr = +new Date()
+        let context = this
+        let args = arguments
+        let t_curr = +new Date()
         clearTimeout(timer)
         if(!t_start){
             t_start = t_curr
@@ -77,7 +77,7 @@ function debounce(fn,delay,mustRunDelay){
     }
 }
 ```
----
+
 
 ## MessageChannel
 > `MessageChannel`接口允许我们创建一个新的消息通道，并通过它的两个MessagePort 属性发送数据。
@@ -96,86 +96,29 @@ function debounce(fn,delay,mustRunDelay){
 ### 用途
 - html和iframe之间的通讯
 - web worker之间的通讯
----
+
 
 ## DocumentFragment
 `DocumentFragment`接口表示没有父级的最小文档对象
-`document.createDocumentFragment()`
 
 因为`DocumentFragment`不是真实 DOM 树的其中一部分，它的变化不会引起 DOM 树的重新渲染操作(reflow) ，因此不会导致性能问题。
 
 当我们需要修改多个节点时，可以创建一个`DocumentFragment`，在此节点进行添加(append)或被插入(inserted)操作。因为所有的节点会被一次性插入到文档中，而这个操作仅发生一个重渲染的操作，而不是每个节点分别被插入到文档中，因为后者会发生多次重渲染的操作。
 
 ```javascript
-var frag = document.createDocumentFragment()
-for (var i = 0; i < 100; i++) {
-  var p = document.createElement("P")
-  var text = document.createTextNode(i)
+let frag = document.createDocumentFragment()
+for (let i = 0; i < 100; i++) {
+  let p = document.createElement("P")
+  let text = document.createTextNode(i)
   p.appendChild(text)
   frag.appendChild(p)
 }
 document.body.appendChild(frag)
 ```
----
-
-## 深拷贝&&浅拷贝
-中所周知，Object是引用数据类型，存储在内存的堆中，浅拷贝只是拷贝了另一个对象的内存地址，所以在修改时会同时修改另一个对象，而深拷贝会开辟新的内存地址，所以不会影响另一个对象
-
-### 浅拷贝
-```javascript
-let obj1 = {a:'1',b:{c:1}}
-// 直接赋值
-let obj2 = obj1
-// 使用Object.assign
-//Object.assign()拷贝的是属性值。假如源对象的属性值是一个指向对象的引用，它也只拷贝那个引用值
-let obj3 = Object.assign({},obj1)
-```
-
-### 深拷贝
-```javascript
-let obj1 = {a:'1',b:{c:1}}
-```
-#### JSON.parse
-```javascript
-let obj2 = JSON.parse(JSON.stringify(obj1))
-```
-#### 递归
-```javascript
-function deepClone(initalObj, finalObj ={}) {       
-  for (let i in initalObj) {        
-    let prop = initalObj[i]
-    if(prop === finalObj) {            
-      continue
-    }        
-    if (typeof prop === 'object') {
-      finalObj[i] = (prop.constructor === Array) ? [] : {}          
-      arguments.callee(prop, finalObj[i]);
-    } else {
-      finalObj[i] = prop
-    }
-  }    
-  return finalObj
-}
-deepClone(obj1) 
-```
-#### Object.create()
-```javascript
-function deepClone(initalObj, finalObj) {    
-  let obj = finalObj || {}   
-  for (let i in initalObj) {        
-    let prop = initalObj[i]
-    if(prop === obj) {            
-      continue
-    }        
-    if (typeof prop === 'object') {
-      obj[i] = (prop.constructor === Array) ? [] : Object.create(prop)
-    } else {
-      obj[i] = prop
-    }
-  }    
-  return obj
-}
-```
+<!-- 深拷贝&&浅拷贝 -->
+!!!include(./docs/youNeedToKnow/copy.md)!!!
+<!-- mutationObserver -->
+!!!include(./docs/youNeedToKnow/mutationObserver.md)!!!
 
 
 

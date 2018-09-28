@@ -3,6 +3,6 @@
 ## 数字千分位分割
 ```javascript
 function commafy(num) {
-  return num.toString().replace(/(\d{1,3})(?=(\d{3})+$)/g,'$1,')
+  return (num.toString().indexOf ('.') !== -1) ? num.toLocaleString() : num.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,')
 }
 ```

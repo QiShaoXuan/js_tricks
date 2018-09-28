@@ -3,7 +3,14 @@ module.exports = {
   description: '常用的js方法，js_tricks',
   dest: './dist',
   base: '/js_tricks/',
-  repo: 'https://qishaoxuan.github.io/js_tricks/', // 添加 github 链接
+  repo: 'https://qishaoxuan.github.io/js_tricks/',
+  markdown: {
+    anchor: { permalink: false },
+    toc: { includeLevel: [1, 2] },
+    config: md => {
+      md.use(require('markdown-it-include'), './')
+    }
+  },
   themeConfig: {
     nav: [
       { text: 'GitHub', link: 'https://github.com/QiShaoXuan/js_tricks' },
@@ -15,6 +22,7 @@ module.exports = {
       '/array/',
       '/date/',
       '/number/',
+      '/cookie/',
     ]
   }
 }
