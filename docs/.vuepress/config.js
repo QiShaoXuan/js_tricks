@@ -4,6 +4,9 @@ module.exports = {
   dest: './dist',
   base: '/js_tricks/',
   repo: 'https://qishaoxuan.github.io/js_tricks/',
+  head: [
+    ['link', { rel: 'icon', href: `/images/favicon.png` }],
+  ],
   markdown: {
     anchor: { permalink: false },
     toc: { includeLevel: [1, 2] },
@@ -14,7 +17,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'css tricks', link: 'https://qishaoxuan.github.io/css_tricks/' },
-      { text: 'you need to kown js', link: 'https://qishaoxuan.github.io/blog/' },
+      // { text: 'you need to kown js', link: 'https://qishaoxuan.github.io/blog/' },
       { text: 'GitHub', link: 'https://github.com/QiShaoXuan/js_tricks' },
     ],
     sidebar: [
