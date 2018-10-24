@@ -1,4 +1,4 @@
-<div align="center"><img src="https://raw.githubusercontent.com/QiShaoXuan/js_tricks/master/logo.png"></div>
+<div align="center"><img src="./logo.png"></div>
 
 ## 关于 About
 
