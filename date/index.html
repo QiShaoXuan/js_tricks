@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>日期 date | js tricks</title>
-    <meta name="description" content="常用的js方法，js_tricks">
+    <meta name="description" content="常用的js方法，js_tricks">
     <link rel="icon" href="/js_tricks/images/favicon.png">
+  <meta name="theme-color" content="#00adb5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="msapplication-TileColor" content="#00adb5">
+  <meta name="description" itemprop="description" content="常用的js方法，js_tricks">
+  <meta itemprop="name" content="js_trick">
+  <meta itemprop="image" content="/js_tricks/images/favicon.png">
     
-    <link rel="preload" href="/js_tricks/assets/css/styles.f98bc424.css" as="style"><link rel="preload" href="/js_tricks/assets/js/app.f98bc424.js" as="script"><link rel="preload" href="/js_tricks/assets/js/9.f350c2c3.js" as="script"><link rel="preload" href="/js_tricks/assets/css/3.styles.6947b0ae.css" as="style"><link rel="preload" href="/js_tricks/assets/js/3.6947b0ae.js" as="script"><link rel="prefetch" href="/js_tricks/assets/css/4.styles.6cfe1402.css"><link rel="prefetch" href="/js_tricks/assets/css/1.styles.1e952896.css"><link rel="prefetch" href="/js_tricks/assets/js/1.1e952896.js"><link rel="prefetch" href="/js_tricks/assets/css/2.styles.de34e984.css"><link rel="prefetch" href="/js_tricks/assets/js/2.de34e984.js"><link rel="prefetch" href="/js_tricks/assets/js/4.6cfe1402.js"><link rel="prefetch" href="/js_tricks/assets/js/5.a623c1c1.js"><link rel="prefetch" href="/js_tricks/assets/js/6.c21da213.js"><link rel="prefetch" href="/js_tricks/assets/js/7.a2153f7b.js"><link rel="prefetch" href="/js_tricks/assets/js/8.d4adfbe2.js"><link rel="prefetch" href="/js_tricks/assets/js/10.36ac09cc.js"><link rel="prefetch" href="/js_tricks/assets/js/11.ef50edbc.js">
-    <link rel="stylesheet" href="/js_tricks/assets/css/4.styles.6cfe1402.css"><link rel="stylesheet" href="/js_tricks/assets/css/1.styles.1e952896.css"><link rel="stylesheet" href="/js_tricks/assets/css/2.styles.de34e984.css"><link rel="stylesheet" href="/js_tricks/assets/css/3.styles.6947b0ae.css"><link rel="stylesheet" href="/js_tricks/assets/css/styles.f98bc424.css">
+    <link rel="preload" href="/js_tricks/assets/css/styles.6b91b8f9.css" as="style"><link rel="preload" href="/js_tricks/assets/js/app.6b91b8f9.js" as="script"><link rel="preload" href="/js_tricks/assets/js/9.f350c2c3.js" as="script"><link rel="preload" href="/js_tricks/assets/css/3.styles.6947b0ae.css" as="style"><link rel="preload" href="/js_tricks/assets/js/3.6947b0ae.js" as="script"><link rel="prefetch" href="/js_tricks/assets/css/4.styles.6cfe1402.css"><link rel="prefetch" href="/js_tricks/assets/css/1.styles.1e952896.css"><link rel="prefetch" href="/js_tricks/assets/js/1.1e952896.js"><link rel="prefetch" href="/js_tricks/assets/css/2.styles.de34e984.css"><link rel="prefetch" href="/js_tricks/assets/js/2.de34e984.js"><link rel="prefetch" href="/js_tricks/assets/js/4.6cfe1402.js"><link rel="prefetch" href="/js_tricks/assets/js/5.dda08625.js"><link rel="prefetch" href="/js_tricks/assets/js/6.c21da213.js"><link rel="prefetch" href="/js_tricks/assets/js/7.a2153f7b.js"><link rel="prefetch" href="/js_tricks/assets/js/8.d4adfbe2.js"><link rel="prefetch" href="/js_tricks/assets/js/10.36ac09cc.js"><link rel="prefetch" href="/js_tricks/assets/js/11.ef50edbc.js">
+    <link rel="stylesheet" href="/js_tricks/assets/css/4.styles.6cfe1402.css"><link rel="stylesheet" href="/js_tricks/assets/css/1.styles.1e952896.css"><link rel="stylesheet" href="/js_tricks/assets/css/2.styles.de34e984.css"><link rel="stylesheet" href="/js_tricks/assets/css/3.styles.6947b0ae.css"><link rel="stylesheet" href="/js_tricks/assets/css/styles.6b91b8f9.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/js_tricks/" class="home-link router-link-active"><!----> <span class="site-name">js tricks</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://qishaoxuan.github.io/css_tricks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -32,6 +39,6 @@
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/js_tricks/assets/js/9.f350c2c3.js" defer></script><script src="/js_tricks/assets/js/3.6947b0ae.js" defer></script><script src="/js_tricks/assets/js/app.f98bc424.js" defer></script>
+    <script src="/js_tricks/assets/js/9.f350c2c3.js" defer></script><script src="/js_tricks/assets/js/3.6947b0ae.js" defer></script><script src="/js_tricks/assets/js/app.6b91b8f9.js" defer></script>
   </body>
 </html>
