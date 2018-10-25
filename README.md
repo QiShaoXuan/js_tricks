@@ -38,6 +38,6 @@ or submit an issue
 欢迎任何有帮助的意见
 
 ## css tricks
-<a href="https://qishaoxuan.github.io/css_tricks/" target="_blank">see online</a>
+<a href="https://qishaoxuan.github.io/css_tricks/" target="_blank">view online</a>
 
 
