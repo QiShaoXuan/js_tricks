@@ -24,7 +24,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'css tricks', link: 'https://qishaoxuan.github.io/css_tricks/' },
-      // { text: 'blog', link: 'https://qishaoxuan.github.io/blog/' },
+      { text: 'blog', link: 'https://qishaoxuan.github.io/blog/' },
       { text: 'GitHub', link: 'https://github.com/QiShaoXuan/js_tricks' },
     ],
     sidebar: [

@@ -10,10 +10,12 @@
 
 ## 快速开始 Quick start
 
-- Clone the `https://github.com/QiShaoXuan/js_tricks.git`
-- Install package `npm install`
-- Development run `npm run docs:dev`
-- Open `http://localhost:8080` in your browser.
+```bash
+  git clone https://github.com/QiShaoXuan/js_tricks.git
+  cd js_tricks
+  npm install
+  npm run docs:dev
+```
 
 ## 内容涵盖 Include
 
