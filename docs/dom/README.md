@@ -1,5 +1,9 @@
 #   文档对象 DOM
 
+## 固定滚动条
+
+<<< ./tpl/dom/frozenScroll.js
+
 ## 判断当前位置是否为页面底部
 
 - 返回值为true/false

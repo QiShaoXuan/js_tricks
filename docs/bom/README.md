@@ -1,5 +1,12 @@
 # 浏览器对象 BOM
 
+## 判读浏览器是否支持 CSS 属性
+<<< ./tpl/bom/style.js
+
+:::tip
+摘自 [https://juejin.im/post/5e58f398f265da574a1eb569](https://juejin.im/post/5e58f398f265da574a1eb569)
+:::
+
 ## 返回当前网页地址
 
 <<< ./tpl/bom/currentURL.js
