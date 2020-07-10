@@ -23,9 +23,9 @@
 
 <<< ./tpl/bom/redirect.js
 
-##  滚动条回到顶部动画
+##  滚动条滚动到指定位置
 
-<<< ./tpl/bom/scrollToTop.js
+<<< ./tpl/bom/scrollTo.ts
 
 ## 复制文本
 
